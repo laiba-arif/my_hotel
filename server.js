@@ -2,7 +2,7 @@ const express=require('express');
 const app=express();
 const db=require('./db');
 
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 const bodyParser=require('body-parser');
 app.use(bodyParser.json());
@@ -19,5 +19,5 @@ app.get('/', (req,res)=>{
 
 
 app.listen(3000,()=>{
-    console.log(`Listening to port ${port}`)
+    console.log(`Listening to port ${PORT}`)
 }) 

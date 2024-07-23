@@ -20,7 +20,7 @@ try {
 router.get('/',async(req,res)=>{
     try {
         const data = await Person.find();
-        console.log('data fertched');
+        console.log('data fetched');
         res.status(200).json(data)
     } catch (error) {
         console.log('Error is :' ,error);
